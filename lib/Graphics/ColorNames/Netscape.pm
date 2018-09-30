@@ -1,5 +1,7 @@
 package Graphics::ColorNames::Netscape;
 
+use v5.6;
+
 # ABSTRACT: Netscape 1.1 Color Names
 
 =head1 SYNOPSIS
