@@ -16,8 +16,8 @@ with Netscape 1.1 (I cannot determine whether they were once usable in
 Netscape or were arbitrary names for RGB values-- I<many of these names are
 not recognized by later versions of Netscape>).
 
-This scheme is deprecated, and will be removed from future versions of
-L<Graphics::ColorNames> but available as a separate module from CPAN.
+This scheme is deprecated, but is provided as a separate release
+from L<Graphics::ColorNames> for backwards compatability.
 
 =head1 SEE ALSO
 
@@ -29,7 +29,9 @@ L<Graphics::ColorNames::IE>
 
 L<Graphics::ColorNames::SVG>
 
-The color names come from L<http://wp.netscape.com/home/bg/colorindex.html>.
+The color names come from
+L<https://web.archive.org/web/20001211143800/http://home1.netscape.com/home/bg/colorindex.html>.
+
 Corrections to errors in the Netscape spec are due to
 L<http://www.he.net/info/color/>.
 
@@ -39,8 +41,6 @@ use strict;
 use warnings;
 
 our $VERSION = 'v3.1.0';
-
-# See http://home1.netscape.com/home/bg/colorindex.html
 
 sub NamesRgbTable() {
     use integer;
