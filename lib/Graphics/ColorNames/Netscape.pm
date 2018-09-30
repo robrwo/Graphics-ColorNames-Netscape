@@ -42,7 +42,7 @@ L<http://www.he.net/info/color/>.
 use strict;
 use warnings;
 
-our $VERSION = 'v3.1.0';
+our $VERSION = 'v3.1.1';
 
 sub NamesRgbTable() {
     use integer;
