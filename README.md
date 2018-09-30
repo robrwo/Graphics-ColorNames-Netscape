@@ -1,0 +1,66 @@
+# NAME
+
+Graphics::ColorNames::Netscape - Netscape 1.1 Color Names
+
+# VERSION
+
+version v3.1.0
+
+# SYNOPSIS
+
+```
+require Graphics::ColorNames::Netscape;
+
+$NameTable = Graphics::ColorNames::Netscape->NamesRgbTable();
+$RgbBlack  = $NameTable->{black};
+```
+
+# DESCRIPTION
+
+This module defines color names and their associated RGB values associated
+with Netscape 1.1 (I cannot determine whether they were once usable in
+Netscape or were arbitrary names for RGB values-- _many of these names are
+not recognized by later versions of Netscape_).
+
+This scheme is deprecated, but is provided as a separate release
+from [Graphics::ColorNames](https://metacpan.org/pod/Graphics::ColorNames) for backwards compatability.
+
+# SEE ALSO
+
+[Graphics::ColorNames](https://metacpan.org/pod/Graphics::ColorNames)
+
+[Graphics::ColorNames::Mozilla](https://metacpan.org/pod/Graphics::ColorNames::Mozilla)
+
+[Graphics::ColorNames::IE](https://metacpan.org/pod/Graphics::ColorNames::IE)
+
+[Graphics::ColorNames::SVG](https://metacpan.org/pod/Graphics::ColorNames::SVG)
+
+The color names come from
+[https://web.archive.org/web/20001211143800/http://home1.netscape.com/home/bg/colorindex.html](https://web.archive.org/web/20001211143800/http://home1.netscape.com/home/bg/colorindex.html).
+
+Corrections to errors in the Netscape spec are due to
+[http://www.he.net/info/color/](http://www.he.net/info/color/).
+
+# SOURCE
+
+The development version is on github at [https://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git](https://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git)
+and may be cloned from [git://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git.git](git://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git.git)
+
+# AUTHOR
+
+Robert Rothenberg <rrwo@cpan.org>
+
+# CONTRIBUTORS
+
+- Magnus Cedergren <magnus@mbox604.swipnet.se>
+- Gary Vollink <gary@vollink.com>
+
+# COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2001-2018 by Robert Rothenberg.
+
+This is free software, licensed under:
+
+```
+The Artistic License 2.0 (GPL Compatible)
+```
