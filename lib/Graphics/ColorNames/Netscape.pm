@@ -42,6 +42,8 @@ L<http://www.he.net/info/color/>.
 use strict;
 use warnings;
 
+# RECOMMEND PREREQ: Graphics::ColorNames
+
 our $VERSION = 'v3.1.2';
 
 sub NamesRgbTable() {

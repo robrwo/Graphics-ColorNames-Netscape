@@ -63,6 +63,7 @@ Robert Rothenberg <rrwo@cpan.org>
 
 - Magnus Cedergren <magnus@mbox604.swipnet.se>
 - Gary Vollink <gary@vollink.com>
+- Slaven Rezić <slaven@rezic.de>
 
 # COPYRIGHT AND LICENSE
 

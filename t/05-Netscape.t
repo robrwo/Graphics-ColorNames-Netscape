@@ -1,31 +1,31 @@
 #!/usr/bin/perl
 
-use strict;
+use Test::Most;
 
-use Test::More tests => 9;
+use Types::Common::Numeric qw/ IntRange /;
+use Types::Standard qw/ HashRef /;
 
-use_ok( 'Graphics::ColorNames', 2.10, qw( hex2tuple tuple2hex ) );
+use Graphics::ColorNames::Netscape;
 
-tie my %colors, 'Graphics::ColorNames', 'Netscape';
-ok( tied %colors );
+ok my $colors = Graphics::ColorNames::Netscape->NamesRgbTable(), 'NamesRgbTable';
 
-ok( keys %colors == 100 );    #
+my $type = HashRef [ IntRange [ 0, 0xffffff ] ];
 
-my $count = 0;
-foreach my $name ( keys %colors ) {
-    my @RGB = hex2tuple( $colors{$name} );
-    $count++, if ( tuple2hex(@RGB) eq $colors{$name} );
-}
-ok( $count == keys %colors );
+ok $type->check($colors), 'returns expected type';
 
-# Problem is with Netscape's color definitions
+cmp_deeply [ keys %$colors ], array_each(
+    code(
+        sub {
+            my ($name) = @_;
+            return ( $name eq lc($name) ) &&
+                ( $name !~ m/\W/ )
+        }
+    )
+  ),
+  'normalized names';
 
-{
-    # local $TODO = "Problem with Netscape color definitions";
-    ok( $colors{gold} ne $colors{mediumblue} );
-    ok( $colors{lightblue} ne $colors{mediumblue} );
-    ok( $colors{lightblue} ne $colors{gold} );
-}
+isnt $colors->{gold} => $colors->{mediumblue}, 'gold != mediumblue';
+isnt $colors->{lightblue} => $colors->{mediumblue}, 'lightblue != mediumblue';
+isnt $colors->{lightblue} => $colors->{gold}, 'lightblue != gold';
 
-ok( $colors{"semisweetchocolate"} eq $colors{"semi-sweetchocolate"} );
-ok( $colors{"baker\'schocolate"} eq $colors{"bakerschocolate"} );
+done_testing;
