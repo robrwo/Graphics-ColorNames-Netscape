@@ -66,10 +66,10 @@ Robert Rothenberg <rrwo@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2001-2018 by Robert Rothenberg.
+Robert Rothenberg has dedicated the work to the Commons by waiving all of his
+or her rights to the work worldwide under copyright law and all related or
+neighboring legal rights he or she had in the work, to the extent allowable by
+law.
 
-This is free software, licensed under:
-
-```
-The Artistic License 2.0 (GPL Compatible)
-```
+Works under CC0 do not require attribution. When citing the work, you should
+not imply endorsement by the author.
