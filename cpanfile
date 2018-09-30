@@ -15,11 +15,13 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
+  requires "Test::CleanNamespaces" => "0.15";
   requires "Test::EOF" => "0";
   requires "Test::EOL" => "0";
   requires "Test::MinimumVersion" => "0";
   requires "Test::More" => "0.88";
   requires "Test::NoTabs" => "0";
+  requires "Test::Perl::Critic" => "0";
   requires "Test::Pod" => "1.41";
   requires "Test::Pod::LinkCheck" => "0";
   requires "Test::Portability::Files" => "0";
