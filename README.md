@@ -43,8 +43,17 @@ Corrections to errors in the Netscape spec are due to
 
 # SOURCE
 
-The development version is on github at [https://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git](https://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git)
-and may be cloned from [git://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git.git](git://github.com/git://github.com/robrwo/Graphics-ColorNames-Netscape.git.git)
+The development version is on github at [https://github.com/robrwo/Graphics-ColorNames-Netscape](https://github.com/robrwo/Graphics-ColorNames-Netscape)
+and may be cloned from [git://github.com/robrwo/Graphics-ColorNames-Netscape.git](git://github.com/robrwo/Graphics-ColorNames-Netscape.git)
+
+# BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+[https://github.com/robrwo/Graphics-ColorNames-Netscape/issues](https://github.com/robrwo/Graphics-ColorNames-Netscape/issues)
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 # AUTHOR
 
