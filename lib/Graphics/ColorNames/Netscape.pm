@@ -44,7 +44,7 @@ use warnings;
 
 # RECOMMEND PREREQ: Graphics::ColorNames
 
-our $VERSION = 'v3.1.3';
+our $VERSION = 'v3.1.4';
 
 sub NamesRgbTable() {
     use integer;
