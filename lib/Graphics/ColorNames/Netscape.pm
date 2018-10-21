@@ -4,6 +4,8 @@ use v5.6;
 
 # ABSTRACT: Netscape 1.1 Color Names
 
+# RECOMMEND PREREQ: Graphics::ColorNames
+
 =head1 SYNOPSIS
 
   require Graphics::ColorNames::Netscape;
