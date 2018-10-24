@@ -4,6 +4,9 @@ Revision history for Graphics-ColorNames-Netscape:
   [Other]
   - Marked this distribution as deprecated in module metadata.
 
+  [Documentation]
+  - Updated ABSTRACT.
+
 v3.1.3    2018-10-21 17:13:48+01:00 Europe/London
   [Documentation]
   - Added INSTALL file to the distribution.
