@@ -2,7 +2,7 @@ package Graphics::ColorNames::Netscape;
 
 use v5.6;
 
-# ABSTRACT: Netscape 1.1 Color Names
+# ABSTRACT: Netscape 1.1 Color Names (DEPRECATED)
 
 =head1 SYNOPSIS
 
@@ -13,13 +13,13 @@ use v5.6;
 
 =head1 DESCRIPTION
 
+This scheme is deprecated, but is provided as a separate release
+from L<Graphics::ColorNames> for backwards compatability.
+
 This module defines color names and their associated RGB values associated
 with Netscape 1.1 (I cannot determine whether they were once usable in
 Netscape or were arbitrary names for RGB values-- I<many of these names are
 not recognized by later versions of Netscape>).
-
-This scheme is deprecated, but is provided as a separate release
-from L<Graphics::ColorNames> for backwards compatability.
 
 =head1 SEE ALSO
 

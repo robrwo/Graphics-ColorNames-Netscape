@@ -1,6 +1,6 @@
 # NAME
 
-Graphics::ColorNames::Netscape - Netscape 1.1 Color Names
+Graphics::ColorNames::Netscape - Netscape 1.1 Color Names (DEPRECATED)
 
 # VERSION
 
@@ -17,13 +17,13 @@ $RgbBlack  = $NameTable->{black};
 
 # DESCRIPTION
 
+This scheme is deprecated, but is provided as a separate release
+from [Graphics::ColorNames](https://metacpan.org/pod/Graphics::ColorNames) for backwards compatability.
+
 This module defines color names and their associated RGB values associated
 with Netscape 1.1 (I cannot determine whether they were once usable in
 Netscape or were arbitrary names for RGB values-- _many of these names are
 not recognized by later versions of Netscape_).
-
-This scheme is deprecated, but is provided as a separate release
-from [Graphics::ColorNames](https://metacpan.org/pod/Graphics::ColorNames) for backwards compatability.
 
 # SEE ALSO
 
